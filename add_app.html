@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Appointed Update</title>
+        <link rel="stylesheet" href="assets/css/index.css" type="text/css"/>
+        <style>
+            body{
+                color: black!important;
+                float: left;
+                text-align: left!important;
+                padding: 10px;
+            }
+        </style>
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+        <script src="assets/js/add_app.js"></script>
+    </head>
+    <body>
+        <h4>Appointment Update</h4>
+        <form name="appoint" action="assets/php/add_app.php" method="post" onsubmit="return validateForm();">
+            <label for="pname">Patient name:</label>
+            <br>
+            <input type="text" id="pname" name="pname" placeholder="Enter patient's name..">
+            <br><br>
+
+            <label for="dname">Doctor name:</label>
+            <br>
+            <input type="text" id="dname" name="dname" placeholder="Enter doctor's name..">
+            <br><br>
+
+            <label for="date">Date:</label>
+            <br>
+            <input type="date" name="date">
+
+            <label for="time">Time:</label>
+            <br>
+            <select id="timeh" width=25% name="timeh">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+            <select id="timem" width=25% name="timem">
+                <option value="00">00</option>
+                <option value="15">15</option>
+                <option value="30">30</option>
+                <option value="45">45</option>
+            </select>
+            <select id="timeap" width=25% name="timeap">
+                <option value="am">am</option>
+                <option value="pm">pm</option>
+            </select>
+
+            <br><br>
+            <button type="submit" name="addapp" id="addapp">
+                Submit
+            </button>
+
+        </form>
+    </body>
+</html>

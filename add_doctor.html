@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Doctor Information form
+        </title>
+        <link rel="stylesheet" href="assets/css/index.css" type="text/css"/>
+        <style>
+            body{
+                color: black!important;
+                float: left;
+                text-align: left!important;
+                padding: 10px;
+            }
+        </style>
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+        <script src="assets/js/add_staff.js"></script>
+    </head>
+    <body>
+        <h4>
+            Doctor Information
+        </h4>
+        <form  name="dform" action="assets/php/add_doctor.php" method="POST" onsubmit="return validateForm();">
+            <label for="name">
+                Name:
+            </label>
+
+            <br>
+
+            <input type="text" id="name" name="name" placeholder="Enter name as written in the previous form..">
+
+            <br><br>
+
+            <label for="pgno">
+                Pager Number:
+            </label>
+
+            <br>
+
+            <input type="text" id="pgno" name="pgno" placeholder="Enter pager number..">
+
+            <br><br>
+
+            <label for="offno">
+                Office Phone Number:
+            </label>
+
+            <br>
+
+            <input type="text" id="offno" name="offno" placeholder="Enter office phone number..">
+
+            <br><br>
+
+            <label for="qual">
+                Qualifiactions:
+            </label>
+
+            <br>
+
+            <input type="text" id="qual" name="qual" placeholder="Enter qualifications.. Use comma for seperation..">
+
+            <br><br>
+
+            <label for="spclty">
+                Specialities:
+            </label>
+
+            <br>
+
+            <input type="text" id="spclty" name="spclty" placeholder="Enter Specialities.. Use comma for seperation..">
+
+            <br><br>
+
+            <button type="submit" name="adddoctor" id="adddoctor">
+                Submit
+            </button>
+        </form>
+    </body>
+</html>

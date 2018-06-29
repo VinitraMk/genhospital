@@ -1,0 +1,105 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Visitaion Records</title>
+<link rel="shortcut icon" href="GHLogo.ico" type="image/x-icon">
+<link href="/assets/css/index.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<script src="/assets/js/index.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><style>
+            form{
+                color:#000000 !important;
+            }
+            body{
+                padding: 20px;
+            }
+            table{
+                background-color: white;
+                width: 70%;
+                margin: 0 auto;
+            }
+            th{
+                background-color: #0D7DBD;
+                color: white;
+                padding: 5px 0 5px 0;
+            }
+            td
+            {
+                color: #0D7DBD;
+            }
+            tr{
+                text-align: center;
+            }
+            tr:nth-child(even){
+                  background-color: lightgrey;
+            }
+            CAPTION{
+            padding: 10px;
+            text-align: center;
+            font-size: 28px;
+            font-family: Georgia, Serif;
+            background-color: white;
+            color: #0D7DBD;
+            }
+        </style>
+</head>
+<body>
+<form name="vsearch" action="/assets/php/visit_search.php" method="POST"><fieldset>
+<legend>Visitation Search</legend>
+<input type="text" id="pname" name="pname" placeholder="Patient Name.." style="width:25%; align:'left';"><br><input type="text" id="sname" name="sname" placeholder="Doctor Name.." style="width:25%; align:'left';"><br><input type="date" id="date" name="date" placeholder="Date.." style="width:25%; align:'left';"><br><button type="submit" name="svat" id="svat" style="width:25%; align:'right';">Apply</button>
+</fieldset></form>
+<table border="1" style="width:100vw;">
+<caption>Visitaion Records</caption>
+<tr>
+<th>VID</th>
+<th>Patient</th>
+<th>Doctor</th>
+<th>Date</th>
+<th>Time</th>
+</tr>
+<tr>
+<td>1 </td>
+<td>Vinitra Muralikrishnan </td>
+<td>vinitra </td>
+<td>2017-11-06 </td>
+<td>18:00 </td>
+</tr>
+<tr>
+<td>2 </td>
+<td>Rohan Gupta </td>
+<td>vinitra </td>
+<td>2017-11-09 </td>
+<td>10:00 </td>
+</tr>
+<tr>
+<td>12 </td>
+<td>Vinitra Muralikrishnan </td>
+<td>vinitra </td>
+<td>2017-11-16 </td>
+<td>12:00 </td>
+</tr>
+<tr>
+<td>15 </td>
+<td>Anil Therlaverjula </td>
+<td>Yogendra Singh </td>
+<td>2017-11-08 </td>
+<td>5:00 </td>
+</tr>
+<tr>
+<td>16 </td>
+<td>Rohan Gupta </td>
+<td>Yogendra Singh </td>
+<td>2017-11-11 </td>
+<td>20:00 </td>
+</tr>
+<tr>
+<td>17 </td>
+<td>Harsh Bhayani </td>
+<td>vinitra </td>
+<td>2017-11-16 </td>
+<td>12:00 </td>
+</tr>
+</table>
+</body>
+</html>

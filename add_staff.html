@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Staff Information form </title>
+        <link rel="stylesheet" href="assets/css/index.css" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+        <style>
+        form{
+            color:#000000 !important;
+        }
+        </style>
+        <script src="assets/js/index.js"></script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+        <script src="assets/js/add_staff.js"></script>
+    </head>
+
+    <body>
+        <form name="sform" action="assets/php/add_staff.php" method="POST" onsubmit="return validateForm();">
+            <fieldset>
+                <legend>Staff Information</legend>
+                Name:<br>
+                <input type="text" id="name" name="name" placeholder="Enter name..">
+                <br><br>
+                Address:<br>
+                <input type="text" id="addr" name="addr" placeholder="Enter address..">
+                <br><br>
+                Phone Number:<br>
+                <input type="text" id="pno" name="phone" placeholder="Enter phone number..">
+                <br><br>
+                Password:<br>
+                <input type="password" id="pwd" name="pwd" placeholder="Enter password">
+                <br><br>
+                Type:<br>
+                <input type="radio" name="type" value="doc">Doctor<br>
+                <input type="radio" name="type" value="nur">Nurse<br><br>
+                <button type="submit" name="addstaff" id="addstaff">Submit</button>
+            </fieldset>
+        </form>
+    </body>
+</html>

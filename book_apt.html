@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Book Appointment</title>
+        <link rel="shortcut icon" href="GHLogo.ico" type="image/x-icon">
+        <link href="assets/css/index.css" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <script src="assets/js/index.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <style>
+        form{
+            color:#000000 !important;
+        }
+        </style>
+    </head>
+    <body>
+        <form action="assets/php/add_app.php">
+            <fieldset>
+                <legend>Personal information:</legend>
+                Name:<br>
+                <input type="text" name="name" placeholder="Rohan">
+                <br>
+                Patient Id:<br>
+                <input type="text" name="pid">
+                <br>
+                Doctor's Id:<br>
+                <input type="text" name="dsid">
+                <br><br>
+                Select date and time:<br/>
+                <input type='date' name='aptdate'>
+                <br/><br/>
+                <button type="submit" id="bookapt" name="bookapt">Book Appointment</button>
+            </fieldset>
+        </form>
+    </body>
+</html>

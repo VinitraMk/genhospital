@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta name="viewport" content="width=device-width">
+      <title>Appointment Cancellation</title>
+      <link rel="stylesheet" href="assets/css/index.css" type="text/css"/>
+      <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+      <style>
+      form{
+          color:#000000 !important;
+      }
+      </style>
+
+      <script src="assets/js/index.js"></script>
+      <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+      <script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+      <script src="assets/js/cancel_apt.js"></script>
+  </head>
+  <body>
+      <form name="capt" action='assets/php/cancel_apt.php' method="POST" onsubmit="return validateForm();">
+          <fieldset>
+              <legend>Cancel Appointment</legend>
+              Visitation Number:<br>
+              <input type="text" id="vid" name="vid" placeholder="Enter Visitaion Number..">
+              <br><br>
+              
+              Patient Number:<br>
+              <input type="text" id="pid" name="pid" placeholder="Enter patient Number..">
+              <br><br>
+              
+              Date of Visitation:<br>
+              <input type="date" name="date" id="date">
+              <br><br>
+              
+              <button type="submit" name="cancel_apt" id="cancelapt">Cancel Appointment</button>
+          </fieldset>
+      </form>
+</body>
+</html>

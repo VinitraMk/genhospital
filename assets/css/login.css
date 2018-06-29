@@ -1,0 +1,47 @@
+body{
+	 text-align : center;
+	 font-family:'Raleway',sans-serif;
+	 color:#1da2f2 !important;
+	 background: #eeeeee !important;
+}
+
+h2 {
+    color:#46b1f2!important;
+}
+.content {
+    margin-top:8vh;
+}
+.avatar {
+    margin-left:5vw;
+    float:left;
+}
+.loginbox{
+    margin-right:5vw;
+    float:right;
+    width:45%;
+    height:75vh;
+    background-color:#d0cfcf;
+    box-shadow:10px 10px 5px #888888;
+}
+.logincontent {
+    margin:15% 5% 5% 5%;
+    text-align:center;
+    color:#1da2f2;
+    font-size:20px;
+}
+input[type=text],input[type=password] {
+    width:80%;
+    display:inline-block;
+    border:1px solid #ccc;
+    box-sizing:border-box;
+    height:5vh;
+}
+#loginbtn {
+    background-color:#46b1f2!important;
+    color:white;
+    padding:14px 20px;
+    margin:8px 0;
+    border:none;
+    cursor:pointer;
+    width:80%;
+}
